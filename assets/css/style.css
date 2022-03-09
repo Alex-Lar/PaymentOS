@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url(../fonts/metropolis.regular.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url(../fonts/metropolis.medium.otf) format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url(../fonts/metropolis.semi-bold.otf) format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url(../fonts/metropolis.bold.otf) format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url(../fonts/metropolis.extra-bold.otf) format("opentype");
+  font-weight: 800;
+}
+
+@use "sass:math";
+@use "sass:math";
+.container {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+  }
+}
+
+body {
+  font-family: "Metropolis", serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+@use "sass:math";
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.logo_black {
+  color: #000000;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 452px;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  font-family: "Metropolis";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #5e5c6c;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #000000;
+}
+
+.nav__link_discord .fa-discord {
+  font-size: 20px;
+}
+
+.nav__link_discord::after {
+  content: "Discord";
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.nav__link_twitter .fa-twitter {
+  font-size: 20px;
+}
+
+.nav__link_twitter::after {
+  content: "Twitter";
+  margin-left: 8px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.nav__link_button {
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #2962ef;
+  color: #ffffff;
+}
+
+.nav__link_button:hover {
+  background-color: #1640c8;
+  color: #ffffff;
+}
+
+@use "sass:math";
+.intro {
+  margin-top: 100px;
+}
+
+.intro__links {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 62px 0 130px 0;
+}
+
+.intro__links .background__image {
+  position: absolute;
+  top: -310px;
+  left: 360px;
+  z-index: -1;
+  width: 420%;
+  max-width: 1700px;
+  height: auto;
+}
+
+.intro__text {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9998a4;
+  text-transform: uppercase;
+}
+
+.intro__text_info {
+  color: #5e5c6c;
+}
+
+.title {
+  width: 100%;
+  max-width: 388px;
+  margin-bottom: 15px;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  color: #232427;
+}
+
+.subtitle {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9998a4;
+}
+
+.button {
+  padding: 13px 25px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid #2962ef;
+  background-color: #2962ef;
+  color: #ffffff;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.button:hover {
+  background-color: #1640c8;
+  color: #ffffff;
+}
+
+.button__icon {
+  margin-left: 7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2962ef;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
+}
+
+.link:hover {
+  color: #0027a8;
+  text-decoration: underline;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 488px;
+  margin-top: 25px;
+}
+
+.info__number {
+  margin-bottom: 5px;
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #232427;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}

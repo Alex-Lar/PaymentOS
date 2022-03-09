@@ -1,0 +1,27 @@
+@import "./vars";
+
+// Container
+.container {
+    max-width: $containerWidth; //1080px
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+body {
+    font-family: "Metropolis", serif;
+    font-weight: 400;
+    font-size: 14px;
+    overflow: hidden;
+}

@@ -1,0 +1,122 @@
+@import "vars";
+
+.intro {
+    margin-top: 100px;
+
+    &__links {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 62px 0 130px 0;
+
+        .background__image {
+            position: absolute;
+            top: -310px;
+            left: 360px;
+            z-index: -1;
+
+            width: 420%;
+            max-width: 1700px;
+            height: auto;
+        }
+    }
+
+    &__text {
+        font-family: "Metropolis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $lightgray;
+        text-transform: uppercase;
+
+        &_info {
+            color: $darkgray;
+        }
+    }
+}
+
+.title {
+    width: 100%;
+    max-width: 388px;
+    margin-bottom: 15px;
+
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: $blacktitle;
+}
+
+
+.subtitle {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $lightgray;
+}
+
+
+.button {
+    padding: 13px 25px;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    border: 1px solid $blue;
+    background-color: $blue;
+    color: $white;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: rgb(22, 64, 200);
+        color: $white;
+    }
+    &__icon {
+        margin-left: 7px;
+        transform: rotate(45deg);
+    }
+}
+
+.link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: $blue;
+    transition: color .2s linear;
+
+    &:hover {
+        color: rgb(0, 39, 168);
+        text-decoration: underline;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 488px;
+    margin-top: 25px;
+
+    &__number {
+        margin-bottom: 5px;
+        font-family: "Metropolis";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        color: $blacktitle;
+    }
+}

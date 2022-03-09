@@ -1,0 +1,122 @@
+@import "vars";
+
+@media (max-width: $breakpoint480) {
+
+    //Global
+
+    .display_none {
+        display: none;
+    }
+
+    //Header
+
+    .header {
+        background-color: #f8f8fa;
+        box-shadow: 0px 2px 6px rgba(128, 128, 128, 0.356);
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        max-width: 50%;
+
+        &__link {
+            font-size: 16px;
+
+            &_discord {
+                .fa-discord {
+                    font-size: 22px;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &_twitter {
+                .fa-twitter {
+                    font-size: 22px;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            &_button {
+                display: none;
+            }
+        }
+    }
+
+
+    //Intro
+
+    .intro {
+        margin-top: 40px;
+        padding-bottom: 25px;
+        padding: 0 20px;
+        overflow: hidden;
+
+        &__links {
+            flex-direction: column;
+            margin: 340px auto 0;
+
+            .background__image {
+                top: -370px;
+                left: -45px;
+
+                width: 220%;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                margin: 0 auto 25px;
+                width: 100%;
+                height: 1px;
+                background-color: $lightgray;
+                opacity: .5;
+            }
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            &_info {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+
+    .button {
+        margin: 0 auto;
+        padding: 13px 75px;
+    }
+
+    .link {
+        margin: 20px auto;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 460px;
+        margin-top: 25px;
+
+        &__number {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+}

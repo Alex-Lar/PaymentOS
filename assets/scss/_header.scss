@@ -1,0 +1,93 @@
+@import "./vars";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+
+    &_black {
+        color: $black;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 452px;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+
+        font-family: "Metropolis";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        color: $darkgray;
+
+        transition: all 0.2s linear;
+
+        &:hover {
+            color: $black;
+        }
+
+        &_discord {
+            .fa-discord {
+                font-size: 20px;
+            }
+
+            &::after {
+                content: "Discord";
+
+                margin-left: 8px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+
+        &_twitter {
+            .fa-twitter {
+                font-size: 20px;
+            }
+
+            &::after {
+                content: "Twitter";
+
+                margin-left: 8px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+
+        &_button {
+            padding: 13px 20px;
+            border-radius: 4px;
+
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+
+            background-color: $blue;
+            color: $white;
+
+            &:hover {
+                background-color: rgb(22, 64, 200);
+                color: $white;
+            }
+        }
+    }
+}
