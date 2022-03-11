@@ -1,42 +1,98 @@
 .section {
+    margin-bottom: 110px;
 
-    // .section__header
+    &__title {
+        width: 100%;
+        max-width: 342px;
+        margin-bottom: 15px;
 
-    &__header {
-
-        // .section__header_step
-
-        &_step {}
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: $blacktitle;
     }
 
-    // .section__title
 
-    &__title {}
+    &__subtitile {
+        width: 100%;
+        max-width: 281px;
 
-    // .section__subtitile
-
-    &__subtitile {}
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $lightgray;
+    }
 }
+
 
 .steps {
+    display: grid;
+    gap: 50px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
 
-    // .steps__item
+    &__header {
+        padding-top: 99px;
+        max-width: 346px;
+        width: 100%;
+        height: auto;
+    }
 
-    &__item {}
+    &__item {
+        padding: 60px 40px 93px;
+        max-width: 346px;
+        width: 100%;
+        height: auto;
 
-    // .steps__title
+        background: #FFFFFF;
+        border: 1px solid #EFEFF4;
+        border-radius: 8px;
+        transition: all .2s linear;
 
-    &__title {}
+        &:hover {
+            background: #FAFBFD;
+        }
 
-    // .steps__text
+        &:hover>.icon {
+            background-color: #fff;
+            box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+        }
+    }
 
-    &__text {}
+
+    &__title {
+        margin-bottom: 16px;
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 18px;
+        color: $blacktitle;
+    }
+
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $lightgray;
+    }
 }
 
+.icon {
+    width: 77px;
+    height: auto;
+    border-radius: 50%;
+    padding: 21px 21px;
+    background-color: #FAFBFD;
+    margin-bottom: 40px;
+    transition: all .2s linear;
 
-.step {
-
-    // .step__icon
-
-    &__icon {}
+    &__image {
+        width: 100%;
+        max-width: 35px;
+        height: auto;
+    }
 }

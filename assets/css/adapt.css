@@ -35,9 +35,19 @@
     display: none;
   }
   .intro {
-    margin-top: 40px;
-    padding: 0 20px 25px;
+    margin: 40px 0 50px;
+    padding: 0 20px 0;
     overflow-x: hidden;
+  }
+  .intro::after {
+    content: "";
+    display: block;
+    margin: 50px auto 0;
+    width: 100%;
+    max-width: 280px;
+    height: 1px;
+    background-color: #9998a4;
+    opacity: .5;
   }
   .intro__links {
     -webkit-box-orient: vertical;
@@ -56,6 +66,7 @@
     display: block;
     margin: 0 auto 25px;
     width: 100%;
+    max-width: 280px;
     height: 1px;
     background-color: #9998a4;
     opacity: .5;
@@ -80,12 +91,174 @@
   }
   .info {
     width: 100%;
-    max-width: 460px;
-    margin-top: 25px;
+  }
+  .info .section {
+    margin-bottom: 110px;
+  }
+  .info .section__title {
+    width: 100%;
+    max-width: 342px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #232427;
+  }
+  .info .section__subtitile {
+    width: 100%;
+    max-width: 281px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9998a4;
+  }
+  .info .steps {
+    display: -ms-grid;
+    display: grid;
+    gap: 50px 20px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .info .steps__header {
+    padding-top: 99px;
+    max-width: 346px;
+    width: 100%;
+    height: 352px;
+  }
+  .info .steps__item {
+    padding: 16px auto 45px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #EFEFF4;
+    border-radius: 8px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  .info .steps__item:hover {
+    background: #FAFBFD;
+  }
+  .info .steps__item:hover > .icon {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+            box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+  }
+  .info .steps__title {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    color: #232427;
+  }
+  .info .steps__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9998a4;
+  }
+  .info .icon {
+    width: 77px;
+    height: auto;
+    border-radius: 50%;
+    padding: 21px 21px;
+    background-color: #FAFBFD;
+    margin-bottom: 40px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  .info .icon__image {
+    width: 100%;
+    max-width: 35px;
+    height: auto;
   }
   .info__number {
     margin-bottom: 0;
     text-align: center;
     font-size: 25px;
+  }
+  .section {
+    margin-bottom: 110px;
+  }
+  .section__title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    font-size: 35px;
+  }
+  .section__subtitile {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 261px;
+  }
+  .steps {
+    gap: none;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .steps__header {
+    margin: 0 auto;
+    padding-top: 0;
+    max-width: 346px;
+    width: 100%;
+    height: auto;
+  }
+  .steps__item {
+    margin: 0 auto;
+    padding: 60px 40px 93px;
+    max-width: 346px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #EFEFF4;
+    border-radius: 8px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  .steps__item:hover {
+    background: #FAFBFD;
+  }
+  .steps__item:hover > .icon {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+            box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+  }
+  .steps__title {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    color: #232427;
+  }
+  .steps__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9998a4;
+  }
+  .icon {
+    width: 77px;
+    height: auto;
+    border-radius: 50%;
+    padding: 21px 21px;
+    background-color: #FAFBFD;
+    margin-bottom: 40px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  .icon__image {
+    width: 100%;
+    max-width: 35px;
+    height: auto;
   }
 }
