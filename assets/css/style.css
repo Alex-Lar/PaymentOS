@@ -163,6 +163,7 @@ body {
 @use "sass:math";
 .intro {
   margin-top: 100px;
+  margin-bottom: 196px;
 }
 
 .intro__links {

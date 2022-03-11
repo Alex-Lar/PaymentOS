@@ -1,0 +1,42 @@
+.section {
+
+    // .section__header
+
+    &__header {
+
+        // .section__header_step
+
+        &_step {}
+    }
+
+    // .section__title
+
+    &__title {}
+
+    // .section__subtitile
+
+    &__subtitile {}
+}
+
+.steps {
+
+    // .steps__item
+
+    &__item {}
+
+    // .steps__title
+
+    &__title {}
+
+    // .steps__text
+
+    &__text {}
+}
+
+
+.step {
+
+    // .step__icon
+
+    &__icon {}
+}
