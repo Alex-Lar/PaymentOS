@@ -123,36 +123,20 @@
   }
   .info .steps__header {
     padding-top: 99px;
-    max-width: 346px;
+    max-width: 400px;
     width: 100%;
-    height: 352px;
+    height: auto;
+    color: red;
   }
   .info .steps__item {
     padding: 16px auto 45px;
     max-width: 400px;
     width: 100%;
-    height: auto;
     background: #FFFFFF;
-    border: 1px solid #EFEFF4;
-    border-radius: 8px;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-  }
-  .info .steps__item:hover {
-    background: #FAFBFD;
-  }
-  .info .steps__item:hover > .icon {
-    background-color: #fff;
-    -webkit-box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
-            box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
   }
   .info .steps__title {
-    margin-bottom: 16px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 18px;
-    color: #232427;
+    margin: 0 auto;
+    text-align: center;
   }
   .info .steps__text {
     font-style: normal;
@@ -185,12 +169,10 @@
     margin-bottom: 110px;
   }
   .section__title {
-    margin: 0 auto;
+    margin: 0 auto 15px;
     text-align: center;
-    max-width: 100%;
-    font-size: 35px;
   }
-  .section__subtitile {
+  .section__subtitle {
     margin: 0 auto;
     text-align: center;
     max-width: 261px;
@@ -207,58 +189,21 @@
   .steps__header {
     margin: 0 auto;
     padding-top: 0;
-    max-width: 346px;
-    width: 100%;
-    height: auto;
+    max-width: 400px;
   }
   .steps__item {
     margin: 0 auto;
-    padding: 60px 40px 93px;
-    max-width: 346px;
-    width: 100%;
-    height: auto;
-    background: #FFFFFF;
-    border: 1px solid #EFEFF4;
-    border-radius: 8px;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-  }
-  .steps__item:hover {
-    background: #FAFBFD;
-  }
-  .steps__item:hover > .icon {
-    background-color: #fff;
-    -webkit-box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
-            box-shadow: 0px 6px 15px rgba(35, 36, 39, 0.05);
+    padding-top: 30px;
+    padding-bottom: 45px;
+    max-width: 400px;
   }
   .steps__title {
-    margin-bottom: 16px;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 18px;
-    color: #232427;
+    text-align: center;
   }
   .steps__text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #9998a4;
+    text-align: center;
   }
   .icon {
-    width: 77px;
-    height: auto;
-    border-radius: 50%;
-    padding: 21px 21px;
-    background-color: #FAFBFD;
-    margin-bottom: 40px;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-  }
-  .icon__image {
-    width: 100%;
-    max-width: 35px;
-    height: auto;
+    margin: 0 auto 40px;
   }
 }
