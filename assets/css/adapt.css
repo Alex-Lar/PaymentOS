@@ -236,10 +236,10 @@
         -ms-flex-align: none;
             align-items: none;
   }
-  .trusted__image_sinthetix {
+  .trusted .--sinthetix {
     margin-top: 30px;
   }
-  .margin {
+  .trusted .margin {
     margin-right: none;
   }
 }
