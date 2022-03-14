@@ -215,6 +215,18 @@
   }
   .trusted__title {
     font-size: 25px;
+    margin-bottom: 35px;
+  }
+  .trusted__title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 150px;
+    height: 1px;
+    background-color: #9998a4;
+    opacity: .5;
   }
   .trusted__links_firstline {
     -webkit-box-pack: space-evenly;
